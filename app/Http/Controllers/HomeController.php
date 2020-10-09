@@ -23,7 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data['logs'] = \DB::table('logs')
+                        ->get();
+        return view('home', $data);
     }
     
+    // public function logs()
+    // {
+        
+    //     return view('logs.logs', $data);
+    // }
 }

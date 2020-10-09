@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Route::get('/contohchart', 'ChartController@contohchart');
 
-// Logs
-Route::get('/logs', [App\Http\Controllers\LogsController::class, 'logs']);
+// // Logs
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'logs']);
 
 Auth::routes();
 
